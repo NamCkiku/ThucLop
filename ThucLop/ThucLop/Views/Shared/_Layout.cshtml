@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | E-Shopper</title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/css/prettyPhoto.css" rel="stylesheet">
+    <link href="~/Content/css/price-range.css" rel="stylesheet">
+    <link href="~/Content/css/animate.css" rel="stylesheet">
+    <link href="~/Content/css/main.css" rel="stylesheet">
+    <link href="~/Content/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+    <header id="header">
+        <!--header-->
+        @RenderPage("_HeaderTop.cshtml")<!--/header_top-->
+        @RenderPage("_HeaderMiddle.cshtml")<!--/header-middle-->
+        @RenderPage("_HeaderBottom.cshtml")<!--/header-bottom-->
+    </header><!--/header-->
+
+    <section id="slider">
+        <!--slider-->
+        @RenderPage("_Slider.cshtml")
+    </section><!--/slider-->
+
+    <section>
+        @RenderBody()
+    </section>
+
+    <footer id="footer">
+        <!--Footer-->
+        @RenderPage("_FooterTop.cshtml")
+
+        @RenderPage("_FooterMiddle.cshtml")
+
+        @RenderPage("_FooterBottom.cshtml")
+
+    </footer><!--/Footer-->
+
+    <script src="~/Scripts/jquery-2.1.4.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/jquery.scrollUp.min.js"></script>
+    <script src="~/Content/js/price-range.js"></script>
+    <script src="~/Content/js/jquery.prettyPhoto.js"></script>
+    <script src="~/Content/js/main.js"></script>
+    <script src="~/Content/js/html5shiv.js"></script>
+    <script src="~/Content/js/gmaps.js"></script>
+    <script src="~/Content/js/contact.js"></script>
+</body>
+</html>
