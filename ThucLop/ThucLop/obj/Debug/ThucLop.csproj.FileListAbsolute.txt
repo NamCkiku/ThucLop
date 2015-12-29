@@ -52,6 +52,5 @@ F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\bin\Microsoft.Owin.Security.Twitter.x
 F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\obj\Debug\ThucLop.dll
 F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\obj\Debug\ThucLop.pdb
-F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\obj\Debug\ThucLop.csprojResolveAssemblyReference.cache
 F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\bin\CKFinder.dll
 F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\bin\CKFinder.pdb

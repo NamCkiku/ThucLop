@@ -15,9 +15,14 @@ namespace ThucLop.Areas.Administrator.Controllers
             var product = db.Products.ToList();
             return View(product);
         }
-        public ActionResult CreateProduct()
+        public ActionResult _CreateProduct()
         {
-            
+
+            return View();
+        }
+        public ActionResult _EditProduct()
+        {
+
             return View();
         }
 	}

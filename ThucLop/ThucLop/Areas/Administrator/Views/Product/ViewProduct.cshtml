@@ -25,7 +25,7 @@
                     <div class="clearfix">
                     </div>
                     <div class="space15"></div>
-                    <button type="button" class="btn btn-round btn-primary btn-md" data-toggle="modal" data-target="#mycreate">
+                    <button type="button" id="create" class="btn btn-round btn-primary btn-md" data-toggle="modal" data-target="#mycreate">
                         <i class="fa fa-plus"></i>Thêm
                     </button>
                     <button type="button" class="btn btn-round btn-primary btn-md" data-toggle="modal" data-target="#myupdate">
@@ -92,106 +92,9 @@
                     <h4 class="modal-title" id="myModalLabel">Thêm Sản Phẩm</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Tên Sản Phẩm</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tên Sản Phẩm">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Mã Sản Phẩm</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Mã Sản Phẩm">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Loại Sản Phẩm</label>
-                                <select class="form-control m-bot15">
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Bảo Hành</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Bảo Hành">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Mã Sản Phẩm</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Mã Sản Phẩm">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Giá Sản Phẩm Vnđ</label>
-                                <input class="form-control" type="text" maxlength="50" value="0">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Giảm Giá</label>
-                                <select class="form-control">
-                                    <option value="0"> --- </option>
-                                    <option value="1">10 %</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Số Lượng</label>
-                                <input class="form-control" type="text" maxlength="50" value="0" name="product_price" style="width: 80px;" onkeyup="this.value=FormatNumber(this.value);" id="f_money">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <input type="text" id="txthinhanh" class="form-control" placeholder="Hình Ảnh">
-                        </div>
-                        <div class="col-lg-2">
-                            <button type="submit" class="btn btn-primary" id="btnSelectImage">
-                                <i class="glyphicon glyphicon-upload"></i>
-                                <span>Chọn Ảnh</span>
-                            </button>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <div class='input-group date' id='datetimepicker1'>
-                                    <input type='text' class="form-control" placeholder="Ngày Đăng" />
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-danger date-reset"><i class="fa fa-times"></i></button>
-                                        <button type="button" class="btn btn-warning date-set"><i class="fa fa-calendar"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <div class='input-group date' id='datetimepicker2'>
-                                    <input type='text' class="form-control" placeholder="Ngày Hết Hạn" />
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-danger date-reset"><i class="fa fa-times"></i></button>
-                                        <button type="button" class="btn btn-warning date-set"><i class="fa fa-calendar"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Mô Tả Tóm Tắt</label>
-                                <textarea id="editor1" name="editor1"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Mô Tả Chi Tiết</label>
-                                <textarea id="editor2" name="editor2"></textarea>
-                            </div>
-                        </div>
-                    </div>
+                   @{
+                       Html.RenderAction("_CreateProduct","Product");
+                   }
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
@@ -208,106 +111,9 @@
                     <h4 class="modal-title" id="myModalLabel">Sửa Sản Phẩm</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Tên Sản Phẩm</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tên Sản Phẩm">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Mã Sản Phẩm</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Mã Sản Phẩm">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Loại Sản Phẩm</label>
-                                <select class="form-control m-bot15">
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Bảo Hành</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Bảo Hành">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Mã Sản Phẩm</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Mã Sản Phẩm">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Giá Sản Phẩm Vnđ</label>
-                                <input class="form-control" type="text" maxlength="50" value="0">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Giảm Giá</label>
-                                <select class="form-control">
-                                    <option value="0"> --- </option>
-                                    <option value="1">10 %</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Số Lượng</label>
-                                <input class="form-control" type="text" maxlength="50" value="0" name="product_price" style="width: 80px;" onkeyup="this.value=FormatNumber(this.value);" id="f_money">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <input type="text" id="txthinhanh2" class="form-control" placeholder="Hình Ảnh">
-                        </div>
-                        <div class="col-lg-2">
-                            <button type="submit" class="btn btn-primary" id="btnSelectImage2">
-                                <i class="glyphicon glyphicon-upload"></i>
-                                <span>Chọn Ảnh</span>
-                            </button>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <div class='input-group date' id='datetimepicker3'>
-                                    <input type='text' class="form-control" placeholder="Ngày Đăng" />
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-danger date-reset"><i class="fa fa-times"></i></button>
-                                        <button type="button" class="btn btn-warning date-set"><i class="fa fa-calendar"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <div class='input-group date' id='datetimepicker4'>
-                                    <input type='text' class="form-control" placeholder="Ngày Hết Hạn" />
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-danger date-reset"><i class="fa fa-times"></i></button>
-                                        <button type="button" class="btn btn-warning date-set"><i class="fa fa-calendar"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Mô Tả Tóm Tắt</label>
-                                <textarea id="editor3" name="editor1"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Mô Tả Chi Tiết</label>
-                                <textarea id="editor4" name="editor2"></textarea>
-                            </div>
-                        </div>
-                    </div>
+                    @{
+                        Html.RenderAction("_EditProduct", "Product");
+                    }
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
@@ -336,57 +142,12 @@
     <!-- page end-->
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="~/Content/Administrator/js/jquery.js"></script>
-    <script src="~/Content/Administrator/assets/ckeditor/ckeditor.js"></script>
+    
     <!-- END JAVASCRIPTS -->
     <script>
         jQuery(document).ready(function () {
             EditableTable.init();
         });
     </script>
-    <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker1').datetimepicker();
-        });
-        $(function () {
-            $('#datetimepicker2').datetimepicker();
-        });
-        $(function () {
-            $('#datetimepicker3').datetimepicker();
-        });
-        $(function () {
-            $('#datetimepicker4').datetimepicker();
-        });
-    </script>
-    <script>
-        var editor = CKEDITOR.replace('editor1', {
-            customConfig: '/Content/Administrator/assets/ckeditor/config.js',
-        });
-        var editor = CKEDITOR.replace('editor2', {
-            customConfig: '/Content/Administrator/assets/ckeditor/config.js',
-        });
-        var editor = CKEDITOR.replace('editor3', {
-            customConfig: '/Content/Administrator/assets/ckeditor/config.js',
-        });
-        var editor = CKEDITOR.replace('editor4', {
-            customConfig: '/Content/Administrator/assets/ckeditor/config.js',
-        });
-    </script>
-    <script>
-        $('#btnSelectImage').on('click', function (e) {
-            e.preventDefault();
-            var finder = new CKFinder();
-            finder.selectActionFunction = function (url) {
-                $('#txthinhanh').val(url);
-            };
-            finder.popup();
-        })
-        $('#btnSelectImage2').on('click', function (e) {
-            e.preventDefault();
-            var finder = new CKFinder();
-            finder.selectActionFunction = function (url) {
-                $('#txthinhanh2').val(url);
-            };
-            finder.popup();
-        })
-    </script>
+
 </body>

@@ -1588,7 +1588,6 @@
       <LastGenOutput>ThucLop.cs</LastGenOutput>
     </Content>
     <Content Include="Areas\Administrator\Views\Product\ViewProduct.cshtml" />
-    <Content Include="Areas\Administrator\Views\Product\CreateProduct.cshtml" />
     <Content Include="Content\Administrator\assets\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
     <Content Include="Content\Administrator\assets\ckfinder\skins\bootstrap\assets\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\Administrator\assets\ckfinder\skins\bootstrap\assets\fonts\glyphicons-halflings-regular.ttf" />
@@ -1604,6 +1603,8 @@
     <Content Include="Content\Administrator\assets\ckeditor\plugins\wsc\README.md" />
     <Content Include="Content\Administrator\assets\ckeditor\README.md" />
     <Content Include="Content\Administrator\assets\ckeditor\skins\moono\readme.md" />
+    <Content Include="Areas\Administrator\Views\Product\_CreateProduct.cshtml" />
+    <Content Include="Areas\Administrator\Views\Product\_EditProduct.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
