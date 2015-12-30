@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ThucLop.Models.Product>
+﻿@*@model IEnumerable<ThucLop.Models.Product>*@
 
 @{
     Layout = "~/Areas/Administrator/Views/Shared/_LayoutAdmin.cshtml";
@@ -48,34 +48,34 @@
                                 <th class="text-center">Ngày Tạo</th>
                             </tr>
                         </thead>
-                        @foreach (var item in Model)
-                        {
-                            <tbody>
-                                <tr class="">
-                                    <td class="text-center"><span><input id=" addbehaviorontoastclick" type="checkbox" value="checked" class="input-small"></span></td>
-                                    <td class="text-center"><img src="@item.Image" width="30" height="30" /></td>
-                                    <td class="text-center">@item.Name</td>
-                                    <td class="text-center">@item.Price VNĐ</td>
-                                    <td class="text-center">@item.Quantity</td>
-                                    <td class="text-center">@item.CreatedDate</td>
-                                    <td class="text-center">@item.CreatedDate</td>
+                        @*@foreach (var item in Model)
+                            {
+                                <tbody>
+                                    <tr class="">
+                                        <td class="text-center"><span><input id=" addbehaviorontoastclick" type="checkbox" value="checked" class="input-small"></span></td>
+                                        <td class="text-center"><img src="@item.Image" width="30" height="30" /></td>
+                                        <td class="text-center">@item.Name</td>
+                                        <td class="text-center">@item.Price VNĐ</td>
+                                        <td class="text-center">@item.Quantity</td>
+                                        <td class="text-center">@item.CreatedDate</td>
+                                        <td class="text-center">@item.CreatedDate</td>
 
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="7">
-                                        <select class="form-control" name="action" id="action">
-                                            <option value="delete">Xóa</option>
-                                            <option value="publtime">Đăng sản phẩm</option>
-                                            <option value="exptime">Cho hết hạn sản phẩm</option>
-                                            <option value="addtoblock">Thêm sản phẩm vào block</option>
-                                        </select>
-                                        <input type="button" class="btn btn-primary" onclick="nv_main_action(this.form, '19561aa02ccb801383374446d09fc314','Bạn cần chọn ít nhất 1 sản phẩm để thực hiện')" value="Thực hiện">
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        }
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="7">
+                                            <select class="form-control" name="action" id="action">
+                                                <option value="delete">Xóa</option>
+                                                <option value="publtime">Đăng sản phẩm</option>
+                                                <option value="exptime">Cho hết hạn sản phẩm</option>
+                                                <option value="addtoblock">Thêm sản phẩm vào block</option>
+                                            </select>
+                                            <input type="button" class="btn btn-primary" onclick="nv_main_action(this.form, '19561aa02ccb801383374446d09fc314','Bạn cần chọn ít nhất 1 sản phẩm để thực hiện')" value="Thực hiện">
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            }*@
                     </table>
                 </div>
             </div>
@@ -92,13 +92,13 @@
                     <h4 class="modal-title" id="myModalLabel">Thêm Sản Phẩm</h4>
                 </div>
                 <div class="modal-body">
-                   @{
-                       Html.RenderAction("_CreateProduct","Product");
-                   }
+                    @{
+                        Html.RenderAction("_CreateProduct", "Product");
+                    }
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                    <button type="button" class="btn btn-primary">Lưu</button>
+                    <button type="button" class="btn btn-primary" id="btnthem">Lưu</button>
                 </div>
             </div>
         </div>
@@ -142,11 +142,22 @@
     <!-- page end-->
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="~/Content/Administrator/js/jquery.js"></script>
-    
+
     <!-- END JAVASCRIPTS -->
     <script>
         jQuery(document).ready(function () {
             EditableTable.init();
+        });
+    </script>
+    <script language="javascript">
+        $("#btnthem").click(function () {
+            $.ajax({
+                url: '@Url.Action("CreateProduct", "Product")',
+                type: "post",
+                success: function () {
+                    alert("đâsdasd");
+                }
+            });
         });
     </script>
 
