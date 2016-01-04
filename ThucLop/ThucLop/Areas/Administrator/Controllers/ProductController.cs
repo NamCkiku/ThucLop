@@ -20,12 +20,18 @@ namespace ThucLop.Areas.Administrator.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult CreateProduct()
+        public ActionResult _CreateProduct( FormCollection connect)
         {
 
-            return View("ViewProduct");
+            return View();
         }
         public ActionResult _EditProduct()
+        {
+
+            return View();
+        }
+        [HttpPost]
+        public ActionResult _EditProduct(FormCollection connect)
         {
 
             return View();

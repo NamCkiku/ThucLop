@@ -117,7 +117,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                    <button type="button" class="btn btn-primary">Lưu</button>
+                    <button type="button" class="btn btn-primary" id="btnedit">Lưu</button>
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@
     <script language="javascript">
         $("#btnthem").click(function () {
             $.ajax({
-                url: '@Url.Action("CreateProduct", "Product")',
+                url: '@Url.Action("_CreateProduct", "Product")',
                 type: "post",
                 success: function () {
                     alert("đâsdasd");
@@ -160,5 +160,15 @@
             });
         });
     </script>
-
+    <script language="javascript">
+        $("#btnedit").click(function () {
+            $.ajax({
+                url: '@Url.Action("_EditProduct", "Product")',
+                type: "post",
+                success: function () {
+                    alert("đâsdasd");
+                }
+            });
+        });
+    </script>
 </body>
