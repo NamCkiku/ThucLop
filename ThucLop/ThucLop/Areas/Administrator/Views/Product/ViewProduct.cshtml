@@ -130,11 +130,13 @@
                     <h4 class="modal-title" id="myModalLabel">Xóa Sản Phẩm</h4>
                 </div>
                 <div class="modal-body">
-
+                    @{
+                        Html.RenderAction("_DeleteProduct", "Product");
+                    }
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                    <button type="button" class="btn btn-primary">Lưu</button>
+                    <button type="button" class="btn btn-danger" id="btnDelete">Xóa</button>
                 </div>
             </div>
         </div>
@@ -164,6 +166,17 @@
         $("#btnedit").click(function () {
             $.ajax({
                 url: '@Url.Action("_EditProduct", "Product")',
+                type: "post",
+                success: function () {
+                    alert("đâsdasd");
+                }
+            });
+        });
+    </script>
+    <script language="javascript">
+        $("#btnDelete").click(function () {
+            $.ajax({
+                url: '@Url.Action("_DeleteProductConfirmed", "Product")',
                 type: "post",
                 success: function () {
                     alert("đâsdasd");

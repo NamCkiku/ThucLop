@@ -54,8 +54,6 @@ F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\obj\Debug\ThucLop.dll
 F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\obj\Debug\ThucLop.pdb
 F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\bin\CKFinder.dll
 F:\_Study\_SourceCode\_Mvc\ThucLop\ThucLop\bin\CKFinder.pdb
-D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\obj\Debug\ThucLop.dll
-D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\obj\Debug\ThucLop.pdb
 D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\bin\ThucLop.dll.config
 D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\bin\ThucLop.dll
 D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\bin\ThucLop.pdb
@@ -110,3 +108,6 @@ D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\bin\Microsoft.Owin.Security.Google.xml
 D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\obj\Debug\ThucLop.csprojResolveAssemblyReference.cache
+D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\obj\Debug\ThucLop.dll
+D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\obj\Debug\ThucLop.pdb

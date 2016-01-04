@@ -1510,6 +1510,7 @@
     <Content Include="Content\Administrator\assets\ckeditor\skins\moono\readme.md" />
     <Content Include="Areas\Administrator\Views\Product\_CreateProduct.cshtml" />
     <Content Include="Areas\Administrator\Views\Product\_EditProduct.cshtml" />
+    <Content Include="Areas\Administrator\Views\Product\_DeleteProduct.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />

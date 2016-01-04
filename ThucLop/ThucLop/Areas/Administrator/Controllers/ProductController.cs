@@ -25,13 +25,24 @@ namespace ThucLop.Areas.Administrator.Controllers
 
             return View();
         }
-        public ActionResult _EditProduct()
+        public ActionResult _EditProduct( int id=0)
         {
 
             return View();
         }
         [HttpPost]
-        public ActionResult _EditProduct(FormCollection connect)
+        public ActionResult _EditProduct(FormCollection connect, int id=0)
+        {
+
+            return View();
+        }
+        public ActionResult _DeleteProduct(int id=0 )
+        {
+
+            return View();
+        }
+        [HttpPost]
+        public ActionResult _DeleteProductConfirmed(int id = 0)
         {
 
             return View();
