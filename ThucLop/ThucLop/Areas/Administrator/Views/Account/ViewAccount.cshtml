@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "ViewNews";
+    ViewBag.Title = "ViewAccount";
     Layout = "~/Areas/Administrator/Views/Shared/_LayoutAdmin.cshtml";
 }
 <section class="wrapper site-min-height">
@@ -27,12 +27,11 @@
                             <th class="text-center">
                                 <span><input id="addBehaviorOnToastClick" type="checkbox" value="checked" class="input-small"></span>
                             </th>
-                            <th class="text-center">Ảnh</th>
-                            <th class="text-center">Tiêu Đề Tin</th>
-                            <th class="text-center">Người Tạo</th>
-                            <th class="text-center">Trạng Thái</th>
-                            <th class="text-center"><em title="Số lượt xem" class="fa fa-eye">&nbsp;</em></th>
-                            <th class="text-center"><em title="Số bình luận" class="fa fa-comment-o">&nbsp;</em></th>
+                            <th class="text-center">Tài Khoản</th>
+                            <th class="text-center">Họ Tên</th>
+                            <th class="text-center">Email</th>
+                            <th class="text-center">Ngày Đăng Ký</th>
+                            <th class="text-center">Hoạt Động</th>
                         </tr>
                     </thead>
                     @*@foreach (var item in Model)
@@ -74,12 +73,12 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Thêm Tin Tức</h4>
+                <h4 class="modal-title" id="myModalLabel">Thêm Tài Khoản</h4>
             </div>
             <div class="modal-body">
-                @{
+                @*@{
                     Html.RenderAction("_CreateNews", "NewsAdmin");
-                }
+                }*@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
@@ -93,12 +92,12 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Sửa Tin Tức</h4>
+                <h4 class="modal-title" id="myModalLabel">Sửa Tài Khoản</h4>
             </div>
             <div class="modal-body">
-                @{
+                @*@{
                     Html.RenderAction("_EditNews", "NewsAdmin");
-                }
+                }*@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
@@ -112,13 +111,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Xóa Tin Tức</h4>
+                <h4 class="modal-title" id="myModalLabel">Xóa Tài Khoản</h4>
             </div>
             <div class="modal-body">
-                @{
+                @*@{
                     Html.RenderAction("_DeleteNews", "NewsAdmin");
                 }
-            </div>
+            </div>*@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
                 <button type="button" class="btn btn-danger" id="btnDelete">Xóa</button>

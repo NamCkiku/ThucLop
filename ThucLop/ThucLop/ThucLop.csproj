@@ -167,10 +167,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Administrator\AdministratorAreaRegistration.cs" />
+    <Compile Include="Areas\Administrator\Controllers\AccountController.cs" />
     <Compile Include="Areas\Administrator\Controllers\GoogleMapController.cs" />
     <Compile Include="Areas\Administrator\Controllers\HomeAdminController.cs" />
     <Compile Include="Areas\Administrator\Controllers\NewsAdminController.cs" />
     <Compile Include="Areas\Administrator\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\StatisticalController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1519,6 +1521,9 @@
     <Content Include="Areas\Administrator\Views\NewsAdmin\_CreateNews.cshtml" />
     <Content Include="Areas\Administrator\Views\NewsAdmin\_EditNews.cshtml" />
     <Content Include="Areas\Administrator\Views\NewsAdmin\_DeleteNews.cshtml" />
+    <Content Include="Areas\Administrator\Views\Statistical\StatisticalProduct.cshtml" />
+    <Content Include="Areas\Administrator\Views\Statistical\StatisticalNews.cshtml" />
+    <Content Include="Areas\Administrator\Views\Account\ViewAccount.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
