@@ -19,35 +19,41 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    
+
 </head>
 <body>
-    <header id="header">
-        <!--header-->
-        @RenderPage("_HeaderTop.cshtml")<!--/header_top-->
-        @RenderPage("_HeaderMiddle.cshtml")<!--/header-middle-->
-        @RenderPage("_HeaderBottom.cshtml")<!--/header-bottom-->
-    </header><!--/header-->
+    <div class="wrapper">
+        <header id="header">
+            <!--header-->
+            @RenderPage("_HeaderTop.cshtml")<!--/header_top-->
+            @RenderPage("_HeaderMiddle.cshtml")<!--/header-middle-->
+            @RenderPage("_HeaderBottom.cshtml")<!--/header-bottom-->
+        </header><!--/header-->
 
-    <section id="slider">
-        <!--slider-->
-        @RenderPage("_Slider.cshtml")
-    </section><!--/slider-->
+        <section id="slider">
+            <!--slider-->
+            @RenderPage("_Slider.cshtml")
+        </section><!--/slider-->
 
-    <section>
-        @RenderBody()
-    </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    @RenderPage("_MenuLeft.cshtml")    @*Menu Left*@
+                    @RenderBody();
+                </div>
+            </div>
+        </section>
 
-    <footer id="footer">
-        <!--Footer-->
-        @RenderPage("_FooterTop.cshtml")
+        <footer id="footer">
+            <!--Footer-->
+            @RenderPage("_FooterTop.cshtml")
 
-        @RenderPage("_FooterMiddle.cshtml")
+            @RenderPage("_FooterMiddle.cshtml")
 
-        @RenderPage("_FooterBottom.cshtml")
+            @RenderPage("_FooterBottom.cshtml")
 
-    </footer><!--/Footer-->
-
+        </footer><!--/Footer-->
+    </div>
     <script src="~/Scripts/jquery-2.1.4.js"></script>
     <script src="~/Content/js/bootstrap.min.js"></script>
     <script src="~/Content/js/jquery.scrollUp.min.js"></script>

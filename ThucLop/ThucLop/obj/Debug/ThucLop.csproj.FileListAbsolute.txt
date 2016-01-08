@@ -110,3 +110,4 @@ D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\obj\Debug\ThucLop.dll
 D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\obj\Debug\ThucLop.pdb
+D:\Nam Ckiku\ThucLop\ThucLop\ThucLop\obj\Debug\ThucLop.csprojResolveAssemblyReference.cache
