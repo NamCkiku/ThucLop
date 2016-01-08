@@ -22,8 +22,27 @@ namespace ThucLop.Areas.Administrator.Controllers
         [HttpPost]
         public ActionResult _CreateProduct( FormCollection connect)
         {
-
-            return View();
+           //if(ModelState.IsValid)
+           //{
+           //    Product pro = new Product();
+           //    string Name = connect["Name"];
+           //    string Picture = connect["Picture"];
+           //    int CategoryId = int.Parse(connect["CategoryId"]);
+           //    DateTime ProductDate = DateTime.Parse(connect["ProductDate"]);
+           //    int UnitBrief = int.Parse(connect["UnitBrief"]);
+           //    int Quantity = int.Parse(connect["Quantity"]);
+           //    string Description = connect["Description"];
+           //    pro.Name = Name;
+           //    pro.Image = Picture;
+           //    pro.CategoryId = CategoryId;
+           //    pro.ProductDate = ProductDate;
+           //    pro.UnitPrice = UnitBrief;
+           //    pro.Quantity = Quantity;
+           //    pro.Description = Description;
+           //    db.Products.Add(pro);
+           //    db.SaveChanges();
+           //}
+            return View("Index");
         }
         public ActionResult _EditProduct( int id=0)
         {

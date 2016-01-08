@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7b5513aa6649431fa25de4c831b0decb" Name="Diagram1">
+        <EntityTypeShape EntityType="ThucLopModel.C__MigrationHistory" Width="1.5" PointX="7.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.AspNetRole" Width="1.5" PointX="5.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.AspNetUserClaim" Width="1.5" PointX="10.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.AspNetUserLogin" Width="1.5" PointX="10.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.AspNetUser" Width="1.5" PointX="8" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.Category" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.Customer" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.OrderDetail" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.Order" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.Permission" Width="1.5" PointX="8" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.Product" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.Supplier" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucLopModel.WebAction" Width="1.5" PointX="5.75" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="ThucLopModel.FK_dbo_Permissions_dbo_AspNetRoles_RoleId" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucLopModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_User_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucLopModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucLopModel.FK_HangHoa_Loai1" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucLopModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucLopModel.FK_OrderDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucLopModel.FK_OrderDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucLopModel.FK_dbo_Permissions_dbo_WebActions_WebActionId" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucLopModel.FK_Products_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucLopModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

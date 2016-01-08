@@ -177,6 +177,60 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Category.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Order.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderDetail.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Permission.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Supplier.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThucLop.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThucLop.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThucLop.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThucLop.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThucLop.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WebAction.cs">
+      <DependentUpon>ThucLop.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -1524,6 +1578,23 @@
     <Content Include="Areas\Administrator\Views\Statistical\StatisticalProduct.cshtml" />
     <Content Include="Areas\Administrator\Views\Statistical\StatisticalNews.cshtml" />
     <Content Include="Areas\Administrator\Views\Account\ViewAccount.cshtml" />
+    <EntityDeploy Include="Models\ThucLop.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ThucLop.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ThucLop.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ThucLop.edmx</DependentUpon>
+      <LastGenOutput>ThucLop.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ThucLop.edmx.diagram">
+      <DependentUpon>ThucLop.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ThucLop.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ThucLop.edmx</DependentUpon>
+      <LastGenOutput>ThucLop.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
@@ -1552,7 +1623,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Administrator\Models\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
