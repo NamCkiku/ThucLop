@@ -1551,6 +1551,7 @@
     <Content Include="Views\Shared\_FooterMiddle.cshtml" />
     <Content Include="Views\Shared\_FooterBottom.cshtml" />
     <Content Include="Views\Shared\_MenuLeft.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
